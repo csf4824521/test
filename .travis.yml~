@@ -40,7 +40,7 @@ before_install:
 before_script:
     - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then source /opt/qt512/bin/qt512-env.sh; fi
 script:
-    - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then source /opt/qt512/bin/qt512-env.sh; qmake ./QML_GitHubCI/QML_GitHubCI.pro ; make ; fi
+    - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then source /opt/qt512/bin/qt512-env.sh; qmake ./QML_GitHub/QML_GitHubCI.pro ; make ; fi
 before_deploy:
 #    - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then mv bin/${targetFile} bin/${releaseName} ; fi
 deploy:              # 部署
